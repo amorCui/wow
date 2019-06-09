@@ -17,6 +17,7 @@
 .talent_name{
     /* flex: 1; */
     align-self: center;
+    color: black;
 }
 .talent_logo{
     /* flex:1; */

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link } from 'react-router-dom';
 
 import styles from "./TalentList.css";
 
@@ -105,7 +106,8 @@ export default class TalentList extends Component {
 
     render() {
         const listItems = this.state.talentList.map((talent,index) =>
-            <a href={"/Detail/" + talent.name_en} className="talent_link" key={index}>
+            <Link to={"/Detail/" + talent.name_en} className="talent_link" key={index} >
+            {/* <a href={"/Detail/" + talent.name_en} className="talent_link" key={index}> */}
                 <li key ={index} className="talent">
                     <div  style={talent.divStyle} className="talent_item">
                         <div className="talent_name">
@@ -123,7 +125,8 @@ export default class TalentList extends Component {
                         </div>
                     </div>
                 </li>
-            </a>
+            {/* </a> */}
+            </Link>
         );
 
         return (
