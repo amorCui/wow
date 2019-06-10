@@ -1,0 +1,43 @@
+.title{
+    padding: 1rem;
+    display:flex;
+    background-color: #170e09;
+}
+
+.title_name{
+    color: #f8b700;
+}
+
+.title_name_logo{
+    height: 5rem;
+}
+
+.title_name_zh{
+    text-align: center;
+}
+
+.title_name_en{
+    text-align: center;
+}
+
+.title_summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.title_summary_subtitle{
+    font-size: .8rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    color: #b1997f;
+}
+
+.title_summary_content{
+    padding-top: .5rem;
+    font-size: 1.08rem;
+    line-height: 1.5em;
+    color: #ebdec2;
+}
