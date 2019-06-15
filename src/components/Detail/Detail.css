@@ -23,6 +23,7 @@
     display: block;
     position: absolute;
     width: 100%;
+    min-height: 100%;
     top: 0px;
     left: 0px;
     background-color: #170e09;
