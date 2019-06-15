@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import TalentList from '../TalentList/TalentList'
+
+// components
+import TalentList from '../TalentList/TalentList';
 
 
 export default class Home extends Component {

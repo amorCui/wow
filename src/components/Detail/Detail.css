@@ -19,6 +19,14 @@
 .title_name_en{
     text-align: center;
 }
+.detailBody{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #170e09;
+}
 
 .title_summary{
     display: flex;

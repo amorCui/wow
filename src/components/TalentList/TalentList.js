@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
-import {talentList} from '../../data/data';
 
-import styles from "./TalentList.css";
+// data
+import {talentList} from '../../Data/Data';
+// css
+import "./TalentList.css";
 
 class TalentList extends Component {
     constructor(props) {
@@ -17,8 +19,6 @@ class TalentList extends Component {
         e.preventDefault();
         this.props.history.push("/Detail/" + profession);
     }
-
-
 
     render() {
         const listItems = talentList.map((talent,index) =>
