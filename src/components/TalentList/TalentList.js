@@ -9,7 +9,6 @@ import "./TalentList.css";
 class TalentList extends Component {
     constructor(props) {
         super(props);
-        console.log(talentList);
     }
     
     /**

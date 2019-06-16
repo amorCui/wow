@@ -1,0 +1,10 @@
+.talentTree_container_line{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.talentTree_container_line_item{
+    flex:1 1 auto;
+    display: flex;
+    justify-content: center;
+}

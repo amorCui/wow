@@ -20,7 +20,8 @@
     text-align: center;
 }
 .detailBody{
-    display: block;
+    display: flex;
+    justify-content:center;
     position: absolute;
     width: 100%;
     min-height: 100%;
@@ -49,4 +50,10 @@
     font-size: 1.08rem;
     line-height: 1.5em;
     color: #ebdec2;
+}
+
+@media screen and ( max-width: 767px ){
+    .detailBody_tree{
+        max-width: 30rem;
+    }
 }
