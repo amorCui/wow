@@ -266,7 +266,21 @@ let talentTree = {
                             ],
                             require_item: 0,
                         },
-                        item2:null,
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/cruelty.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/cruelty-off.jpg"),
+                            item_name: '残忍',
+                            max_level: 5,
+                            description: '使你用近战武器对敌人造成致命一击的几率提高{$0}%。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3],
+                                [4],
+                                [5]
+                            ],
+                            require_item: 0,
+                        },
                         item3:null
                     }
                 ]
@@ -297,7 +311,21 @@ let talentTree = {
                             ],
                             require_item: 0,
                         },
-                        item2:null,
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/anticipation.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/anticipation-off.jpg"),
+                            item_name: '预知',
+                            max_level: 5,
+                            description: '使你的防御技能提高{$0}点。',
+                            valueList:[
+                                [2],
+                                [4],
+                                [6],
+                                [8],
+                                [10]
+                            ],
+                            require_item: 0,
+                        },
                         item3:null
                     }
             
