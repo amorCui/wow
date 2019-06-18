@@ -20,16 +20,16 @@ class TalentContainer extends Component {
                 <div key ={index} className="talentTree_container_line">
 
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item0}></TalentItem>
+                        <TalentItem item={treeLine.item0} currentLevel={0}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item1}></TalentItem>
+                        <TalentItem item={treeLine.item1} currentLevel={0}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item2}></TalentItem>
+                        <TalentItem item={treeLine.item2} currentLevel={0}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item3}></TalentItem>
+                        <TalentItem item={treeLine.item3} currentLevel={0}></TalentItem>
                     </div>
                 </div>
             );
@@ -60,7 +60,7 @@ class TalentContainer extends Component {
                             <div className="talentTree_container_footer_content_point">: 10点</div>
                         </div>
                         <div className="talentTree_container_footer_content_right">
-                            <a>
+                            <a className="talentTree_container_footer_button">
                                 <img src={require('../../source/img/reset.gif')} alt="" />
                             </a>
                         </div>

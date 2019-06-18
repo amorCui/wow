@@ -79,9 +79,10 @@
     display: flex;
     flex-direction: row-reverse;
 }
-.talentTree_container_footer_content_right a{
+.talentTree_container_footer_button{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .talentTree_container_footer_content_right img{
     

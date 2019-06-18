@@ -23,7 +23,7 @@
     vertical-align: middle;
 }
 .talentTree_header_button{
-
+    cursor: pointer;
 }
 .talentTree_header_button img{
     display: block;

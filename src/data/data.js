@@ -200,11 +200,42 @@ let talentTree = {
                             item_icon_off: require("../source/img/talents/warrior/warrior_0/improvedheroicstrike-off.jpg"),
                             item_name: '强化英勇打击',
                             max_level: 3,
-                            description: '使你的英勇打击技能所消耗的怒气值减少1点。',
+                            description: '使你的英勇打击技能所消耗的怒气值减少{$0}点。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3]
+                            ],
                             require_item: 0,
                         },
-                        item1:null,
-                        item2:null,
+                        item1:{
+                            item_icon:require("../source/img/talents/warrior/warrior_0/deflection.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/deflection-off.jpg"),
+                            item_name: '偏斜',
+                            max_level: 5,
+                            description: '使你的招架几率提高{$0}%。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3],
+                                [4],
+                                [5]
+                            ],
+                            require_item: 0,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/improvedrend.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/improvedrend-off.jpg"),
+                            item_name: '强化撕裂',
+                            max_level: 3,
+                            description: '使你的撕裂技能的流血伤害效果每次生效时都提高{$0}%。',
+                            valueList:[
+                                [15],
+                                [25],
+                                [35]
+                            ],
+                            require_item: 0,
+                        },
                         item3:null
                     }
                 ]
@@ -225,7 +256,14 @@ let talentTree = {
                             item_icon_off: require("../source/img/talents/warrior/warrior_1/boomingvoice-off.jpg"),
                             item_name: '震耳噪音',
                             max_level: 5,
-                            description: '使你的战斗怒吼和挫志怒吼效果的作用范围和持续时间提高10%。',
+                            description: '使你的战斗怒吼和挫志怒吼效果的作用范围和持续时间提高{$0}%。',
+                            valueList:[
+                                [10],
+                                [20],
+                                [30],
+                                [40],
+                                [50]
+                            ],
                             require_item: 0,
                         },
                         item2:null,
@@ -249,7 +287,14 @@ let talentTree = {
                             item_icon_off: require("../source/img/talents/warrior/warrior_2/shieldspecialization-off.jpg"),
                             item_name: '盾牌专精',
                             max_level: 5,
-                            description: '使你用盾牌格挡攻击的几率提高1%，在成功格挡后有20%的几率得到1点怒气。',
+                            description: '使你用盾牌格挡攻击的几率提高{$0}%，在成功格挡后有{$1}%的几率得到1点怒气。',
+                            valueList:[
+                                [1,20],
+                                [2,40],
+                                [3,60],
+                                [4,80],
+                                [5,100]
+                            ],
                             require_item: 0,
                         },
                         item2:null,

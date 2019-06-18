@@ -4,7 +4,37 @@
 }
 
 .talentTree_container_line_item{
-    flex:1 1 auto;
+    flex:1;
     display: flex;
     justify-content: center;
+}
+
+.talentItem_border{
+    position: relative;
+}
+
+.talentItem_level{
+    position: absolute;
+    bottom: 0;
+    right: -.5rem;
+    color: #1aff1a;
+    font-size: .5rem;
+    line-height: .5rem;
+    padding: .15rem;
+    background-color: #000000;
+    border-radius: .2rem;
+    border: .08rem solid #37362e;
+}
+
+.talentItem_tooltips{
+    border-radius: 6px;
+    border: solid 2px #6d6c6d!important;
+    width: 10rem;
+    background-color: #04091d50 !important;
+}
+.talentItem_tips_cancel{
+    color: #1ae91b;
+}
+.talentItem_tips_learn{
+    color: #fb1410;
 }
