@@ -9,7 +9,6 @@ import "./TalentItem.css";
 class TalentItem extends Component {
     constructor(props){
         super(props);
-        console.log("props:",props)
         if(this.props.item){
             let replaceList = this.props.item.valueList[this.props.currentLevel];
             this.current_desc = this.replace(this.props.item.description,replaceList);

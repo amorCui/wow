@@ -14,9 +14,9 @@ import { talentTree } from '../../Data/Data';
 class TalentTree extends Component {
     constructor(props) {
         super(props);
-
+ 
         this.state = {
-            trees: talentTree.Warrior,
+            trees: talentTree[this.props.profession.name_en],
             level_0:0,
             level_1:0,
             level_2:0

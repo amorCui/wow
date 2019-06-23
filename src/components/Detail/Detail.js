@@ -41,10 +41,9 @@ class Detail extends Component {
                             <div className="title_summary_content">{this.state.profession.summary}</div>
                         </div>
                     </div>
-                    <TalentTree></TalentTree>
+                    <TalentTree profession={this.state.profession}></TalentTree>
                 </div>
             </div>
-
         )
     }
 }

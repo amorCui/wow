@@ -14,7 +14,6 @@ class TalentContainer extends Component {
 
     render() {
         const treeLineList = this.props.treeList.tree.tree_line.map((treeLine,index) => {
-            console.log("treeLine:",treeLine);
             return(
                 <div key ={index} className="talentTree_container_line">
                     <div className="talentTree_container_line_item">
