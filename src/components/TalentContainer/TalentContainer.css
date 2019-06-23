@@ -1,6 +1,6 @@
 .talentTree_container_body{
     display: flex;
-    flex-grow: 1;
+    flex: 1 1;
     margin: .5rem 1rem;
     justify-content: center;
     flex-direction: column;

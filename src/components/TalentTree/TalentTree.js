@@ -16,24 +16,26 @@ class TalentTree extends Component {
         super(props);
 
         this.state = {
-            trees: talentTree.Warrior
+            trees: talentTree.Warrior,
+            level_0:0,
+            level_1:0,
+            level_2:0
         }
     }
 
     render() {
         return (
             <div className="talentTree">
-
                 <div className="talentTree_header">
                     <div className="talentTree_header_profession">
                         <div>{this.state.trees.name}</div>
-                        <div>(0/0/0)</div>
+                        <div>({this.state.level_0}/{this.state.level_1}/{this.state.level_2})</div>
                     </div>
                     <div className="talentTree_header_level">
-                        需要等级：60
+                        需要等级：{9 + this.state.level_0 + this.state.level_1 + this.state.level_2}
                         </div>
                     <div className="talentTree_header_pointer">
-                        剩余点数 60
+                        剩余点数 { 51 - this.state.level_0 - this.state.level_1 - this.state.level_2}
                         </div>
                     <div className="talentTree_header_button_group">
                         <a className="talentTree_header_button">
@@ -42,9 +44,9 @@ class TalentTree extends Component {
                     </div>
                 </div>
                 <div className="talentTree_container">
-                    <TalentContainer treeList={this.state.trees.tree_0}></TalentContainer>
-                    <TalentContainer treeList={this.state.trees.tree_1}></TalentContainer>
-                    <TalentContainer treeList={this.state.trees.tree_2}></TalentContainer>
+                    <TalentContainer treeList={this.state.trees.tree_0} currentLevel={this.state.level_0}></TalentContainer>
+                    <TalentContainer treeList={this.state.trees.tree_1} currentLevel={this.state.level_1}></TalentContainer>
+                    <TalentContainer treeList={this.state.trees.tree_2} currentLevel={this.state.level_2}></TalentContainer>
                 </div>
 
             </div>

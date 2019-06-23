@@ -13,26 +13,24 @@ class TalentContainer extends Component {
     }
 
     render() {
-        let treeLineList = [];
-    
-        this.props.treeList.tree.tree_line.forEach((treeLine,index) => {
-            treeLineList.push(
+        const treeLineList = this.props.treeList.tree.tree_line.map((treeLine,index) => {
+            console.log("treeLine:",treeLine);
+            return(
                 <div key ={index} className="talentTree_container_line">
-
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item0} currentLevel={0}></TalentItem>
+                        <TalentItem item={treeLine.item0} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0} ></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item1} currentLevel={0}></TalentItem>
+                        <TalentItem item={treeLine.item1} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item2} currentLevel={0}></TalentItem>
+                        <TalentItem item={treeLine.item2} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item3} currentLevel={0}></TalentItem>
+                        <TalentItem item={treeLine.item3} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0}></TalentItem>
                     </div>
                 </div>
-            );
+            )
         });
 
         return (
@@ -57,7 +55,7 @@ class TalentContainer extends Component {
                                 <img src={this.props.treeList.tree_icon} alt="" />
                             </div>
                             <div className="talentTree_container_footer_content_name">{this.props.treeList.tree_name}</div>
-                            <div className="talentTree_container_footer_content_point">: 10点</div>
+                            <div className="talentTree_container_footer_content_point">: {this.props.currentLevel}点</div>
                         </div>
                         <div className="talentTree_container_footer_content_right">
                             <a className="talentTree_container_footer_button">

@@ -237,6 +237,225 @@ let talentTree = {
                             require_item: 0,
                         },
                         item3:null
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/improvedcharge.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/improvedcharge-off.jpg"),
+                            item_name: '强化冲锋',
+                            max_level: 2,
+                            description: '使你的冲锋技能积攒的怒气值提高{$0}点。',
+                            valueList:[
+                                [3],
+                                [6]
+                            ],
+                            require_item: 5,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/tacticalmastery.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/tacticalmastery-off.jpg"),
+                            item_name: '战术掌握',
+                            max_level: 5,
+                            description: '在改变姿态的时候可以保留最多{$0}点怒气。',
+                            valueList:[
+                                [5],
+                                [10],
+                                [15],
+                                [20],
+                                [25]
+                            ],
+                            require_item: 5,
+                        },
+                        item2:null,
+                        item3:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/improvedthunderclap.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/improvedthunderclap-off.jpg"),
+                            item_name: '强化雷霆一击',
+                            max_level: 3,
+                            description: '使你的雷霆一击技能所消耗的怒气值减少{$0}点。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [4]
+                            ],
+                            require_item: 5,
+                        }
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/improvedoverpower.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/improvedoverpower-off.jpg"),
+                            item_name: '强化压制',
+                            max_level: 2,
+                            description: '使你的压制技能造成的致命一击的几率提高{$0}%。',
+                            valueList:[
+                                [25],
+                                [50]
+                            ],
+                            require_item:10,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/angermanagement.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/angermanagement-off.jpg"),
+                            item_name: '愤怒掌控',
+                            max_level: 1,
+                            description: '当脱离战斗后，使你的怒气减少速度降低{$0}%。',
+                            valueList:[
+                                [30]
+                            ],
+                            require_item:10,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/deepwounds.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/deepwounds-off.jpg"),
+                            item_name: '重伤',
+                            max_level: 3,
+                            description: '你的致命一击导致目标流血，使其在{$0}秒内遭受相当于你的武器平均伤害值的{$1}%的伤害。',
+                            valueList:[
+                                [12,20],
+                                [12,40],
+                                [12,60]
+                            ],
+                            require_item: 10,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:null,
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/two-handedweaponspecialization.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/two-handedweaponspecialization-off.jpg"),
+                            item_name: '双手武器专精',
+                            max_level: 5,
+                            description: '使你的双手近战武器造成的伤害提高{$0}%。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3],
+                                [4],
+                                [5]
+                            ],
+                            require_item: 15,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/impale.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/impale-off.jpg"),
+                            item_name: '穿刺',
+                            max_level: 2,
+                            description: '使你在战斗姿态、防御姿态、狂暴姿态下的各种技能的致命一击伤害加成提高{$0}%。',
+                            valueList:[
+                                [10],
+                                [20]
+                            ],
+                            require_item: 15,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/axespecialization.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/axespecialization-off.jpg"),
+                            item_name: '强化冲锋',
+                            max_level: 5,
+                            description: '使你的斧类武器造成致命一击的几率提高{$0}%。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3],
+                                [4],
+                                [5]
+                            ],
+                            require_item: 20,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/sweepingstrikes.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/sweepingstrikes-off.jpg"),
+                            item_name: '横扫攻击',
+                            max_level: 1,
+                            description: '技能，{$0}怒气，{$1}，{$2}秒冷却。你在接下来的{$3}次近战攻击中可以攻击到一个额外的敌人。',
+                            valueList:[
+                                [30,'瞬发',30,5]
+                            ],
+                            require_item: 20,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/macespecialization.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/macespecialization-off.jpg"),
+                            item_name: '锤类武器专精',
+                            max_level: 5,
+                            description: '使你的单手锤在击中目标时有{$0}%的机会将其击晕{$1}秒。',
+                            valueList:[
+                                [1,3],
+                                [2,3],
+                                [3,3],
+                                [4,3],
+                                [6,3]
+                            ],
+                            require_item: 20,
+                        },
+                        item3:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/swordspecialization.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/swordspecialization-off.jpg"),
+                            item_name: '剑类武器专精',
+                            max_level: 5,
+                            description: '使你在用剑类武器击中敌人后有{$0}%的几率进行一次额外的攻击。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3],
+                                [4],
+                                [5]
+                            ],
+                            require_item: 20,
+                        }
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/polearmspecialization.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/polearmspecialization-off.jpg"),
+                            item_name: '长柄武器专精',
+                            max_level: 5,
+                            description: '使你的矛和长柄武器造成致命一击的几率提高{$0}%。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3],
+                                [4],
+                                [5]
+                            ],
+                            require_item: 25,
+                        },
+                        item1:null,
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/improvedhamstring.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/improvedhamstring-off.jpg"),
+                            item_name: '强化断筋',
+                            max_level: 3,
+                            description: '使你的断筋技能有{$0}%的几率令目标无法移动，持续{$1}秒。',
+                            valueList:[
+                                [5,5],
+                                [10,5],
+                                [15,5]
+                            ],
+                            require_item: 25,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:null,
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_0/mortalstrike.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_0/mortalstrike-off.jpg"),
+                            item_name: '致死打击',
+                            max_level: 1,
+                            description: '技能，{$0}怒气，{$1}，{$2}秒冷却。<br>一次邪恶的攻击，对目标造成武器伤害外加{$3}点伤害，并使任何形式的治疗对其产生的效果降低{$4}%，持续{$5}秒。',
+                            valueList:[
+                                [30,'瞬发',6,85,50,10]
+                            ],
+                            require_item: 30,
+                        },
+                        item2:null,
+                        item3:null
                     }
                 ]
             }
@@ -328,7 +547,7 @@ let talentTree = {
                         },
                         item3:null
                     }
-            
+                   
                 ]
             }
         }
