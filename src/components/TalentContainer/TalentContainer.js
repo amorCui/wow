@@ -12,21 +12,26 @@ class TalentContainer extends Component {
         super(props);
     }
 
+    handleClick = ()=>{
+        console.log(1);
+        this.props.handleClick();
+    }
+
     render() {
         const treeLineList = this.props.treeList.tree.tree_line.map((treeLine,index) => {
             return(
                 <div key ={index} className="talentTree_container_line">
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item0} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0} ></TalentItem>
+                        <TalentItem item={treeLine.item0} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0} handleClick={this.handleClick}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item1} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0}></TalentItem>
+                        <TalentItem item={treeLine.item1} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0} handleClick={this.handleClick}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item2} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0}></TalentItem>
+                        <TalentItem item={treeLine.item2} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0} handleClick={this.handleClick}></TalentItem>
                     </div>
                     <div className="talentTree_container_line_item">
-                        <TalentItem item={treeLine.item3} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0}></TalentItem>
+                        <TalentItem item={treeLine.item3} treeName={this.props.treeList.tree_name} currentLevel={this.props.currentLevel} currentItemLevel={0} handleClick={this.handleClick}></TalentItem>
                     </div>
                 </div>
             )

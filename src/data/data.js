@@ -501,6 +501,227 @@ let talentTree = {
                             require_item: 0,
                         },
                         item3:null
+                    },
+                    {
+                        item0:null,
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/improveddemoralizingshout.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/improveddemoralizingshout-off.jpg"),
+                            item_name: '强化挫志怒吼',
+                            max_level: 5,
+                            description: '使你的挫志怒吼技能降低敌人攻击强度的效果提高{$0}%。',
+                            valueList:[
+                                [8],
+                                [16],
+                                [24],
+                                [36],
+                                [40]
+                            ],
+                            require_item: 5,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/unbridledwrath.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/unbridledwrath-off.jpg"),
+                            item_name: '怒不可遏',
+                            max_level: 5,
+                            description: '使你有{$0}%的几率在对敌人造成近战伤害之后获得{$1}个额外的怒气点数。',
+                            valueList:[
+                                [8,1],
+                                [16,1],
+                                [24,1],
+                                [36,1],
+                                [40,1]
+                            ],
+                            require_item: 5,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/improvedcleave.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/improvedcleave-off.jpg"),
+                            item_name: '强化顺劈斩',
+                            max_level: 3,
+                            description: '使你的顺劈斩技能附加的伤害提高{$0}%。',
+                            valueList:[
+                                [40],
+                                [80],
+                                [120]
+                            ],
+                            require_item: 10,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/piercinghowl.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/piercinghowl-off.jpg"),
+                            item_name: '刺耳怒吼',
+                            max_level: 1,
+                            description: '技能，瞬发，{$0}怒气。<br/> 使战士附近的所有敌人震慑{$1}秒。',
+                            valueList:[
+                                [10,6]
+                            ],
+                            require_item: 10,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/bloodcraze.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/bloodcraze-off.jpg"),
+                            item_name: '血之狂热',
+                            max_level: 3,
+                            description: '在受到致命一击之后的{$0}秒内恢复生命值总量的{$1}%。',
+                            valueList:[
+                                [6,1],
+                                [6,2],
+                                [6,3]
+                            ],
+                            require_item: 10,
+                        },
+                        item3:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/improvedbattleshout.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/improvedbattleshout-off.jpg"),
+                            item_name: '强化战斗怒吼',
+                            max_level: 5,
+                            description: '使你的战斗怒吼提高攻击强度的效果增强{$0}%。',
+                            valueList:[
+                                [5],
+                                [10],
+                                [15],
+                                [20],
+                                [25]
+                            ],
+                            require_item: 10,
+                        }
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/dualwieldspecialization.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/dualwieldspecialization-off.jpg"),
+                            item_name: '双武器专精',
+                            max_level: 5,
+                            description: '使你的副手武器所造成的伤害提高{$0}%。',
+                            valueList:[
+                                [5],
+                                [10],
+                                [15],
+                                [20],
+                                [25]
+                            ],
+                            require_item: 15,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/improvedexecute.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/improvedexecute-off.jpg"),
+                            item_name: '强化斩杀',
+                            max_level: 2,
+                            description: '使你的斩杀技能的怒气值消耗减少{$0}点。',
+                            valueList:[
+                                [2],
+                                [5]
+                            ],
+                            require_item: 15,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/enrage.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/enrage-off.jpg"),
+                            item_name: '狂怒',
+                            max_level: 5,
+                            description: '使你在遭到敌人的致命一击之后所进行的{$0}次近战攻击都获得{$1}%的额外伤害加值，效果持续{$2}秒。',
+                            valueList:[
+                                [12,5,12],
+                                [12,10,12],
+                                [12,15,12],
+                                [12,20,12],
+                                [12,25,12]
+                            ],
+                            require_item: 15,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/improvedslam.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/improvedslam-off.jpg"),
+                            item_name: '强化猛击',
+                            max_level: 5,
+                            description: '使你的猛击技能的施放时间减少{$0}秒。',
+                            valueList:[
+                                [0.1],
+                                [0.2],
+                                [0.3],
+                                [0.4],
+                                [0.5]
+                            ],
+                            require_item: 20,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/deathwish.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/deathwish-off.jpg"),
+                            item_name: '死亡之愿',
+                            max_level: 1,
+                            description: '技能，{$0}，{$1}怒气，{$2}分钟冷却。<br/>激活之后，你的物理攻击伤害提高{$3}%，并免疫恐惧效果，但是对所有攻击的防御力都降低{$4}%。持续{$4}秒。',
+                            valueList:[
+                                ["瞬发",10,3,20,20,30]
+                            ],
+                            require_item: 20,
+                        },
+                        item2:null,
+                        item3:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/improvedintercept.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/improvedintercept-off.jpg"),
+                            item_name: '强化拦截',
+                            max_level: 2,
+                            description: '使你的拦截技能的冷却时间减少{$0}秒。',
+                            valueList:[
+                                [5],
+                                [10]
+                            ],
+                            require_item: 20,
+                        }
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/improvedberserkerrage.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/improvedberserkerrage-off.jpg"),
+                            item_name: '强化拦强化狂暴之怒截',
+                            max_level: 2,
+                            description: '在使用狂暴之怒技能之后获得{$0}点怒气值。',
+                            valueList:[
+                                [5],
+                                [10]
+                            ],
+                            require_item: 25,
+                        },
+                        item1:null,
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/flurry.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/flurry-off.jpg"),
+                            item_name: '乱舞',
+                            max_level: 5,
+                            description: '当你的近战攻击打出致命一击之后，你的下{$0}次近战攻击速度将提高{$1}%。',
+                            valueList:[
+                                [3,10],
+                                [3,15],
+                                [3,20],
+                                [3,25],
+                                [3,30]
+                            ],
+                            require_item: 25,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:null,
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_1/boomingvoice.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_1/boomingvoice-off.jpg"),
+                            item_name: '嗜血',
+                            max_level: 1,
+                            description: '技能，{$0}，{$1}怒气，{$2}秒冷却。<br/>立即攻击目标，对其造成相当于你的攻击强度{$3}%的伤害。另外，你的下{$4}次成功的近战攻击每次都可令你恢复{$5}点生命。效果持续{$6}秒。',
+                            valueList:[
+                                ["瞬发",30,6,40,5,10,8]
+                            ],
+                            require_item: 30,
+                        },
+                        item2:null,
+                        item3:null
                     }
                 ]
             }
@@ -545,6 +766,220 @@ let talentTree = {
                             ],
                             require_item: 0,
                         },
+                        item3:null
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improvedbloodrage.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improvedbloodrage-off.jpg"),
+                            item_name: '强化血性狂暴',
+                            max_level: 2,
+                            description: '使你的血性狂暴技能所产生的怒气值提高{$0}点。',
+                            valueList:[
+                                [2],
+                                [5]
+                            ],
+                            require_item: 5,
+                        },
+                        item1:null,
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/toughness.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/toughness-off.jpg"),
+                            item_name: '坚韧',
+                            max_level: 5,
+                            description: '使你因装备而获得的护甲值提高{$0}%。',
+                            valueList:[
+                                [2],
+                                [4],
+                                [6],
+                                [8],
+                                [10]
+                            ],
+                            require_item: 5,
+                        },
+                        item3:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/ironwill.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/ironwill-off.jpg"),
+                            item_name: '钢铁意志',
+                            max_level: 5,
+                            description: '使你抵抗昏迷和魅惑效果的几率提高{$0}%。',
+                            valueList:[
+                                [3],
+                                [6],
+                                [9],
+                                [12],
+                                [15]
+                            ],
+                            require_item: 5,
+                        }
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/laststand.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/laststand-off.jpg"),
+                            item_name: '破釜沉舟',
+                            max_level: 1,
+                            description: '技能，{$0}，{$1}分钟冷却。<br/>激活之后，使你暂时获得{$2}%的生命值，持续{$3}秒。在效果解除之后，这些生命值会被扣除。',
+                            valueList:[
+                                ["瞬发",10,30,20]
+                            ],
+                            require_item: 10,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improvedshieldblock.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improvedshieldblock-off.jpg"),
+                            item_name: '强化盾牌格挡',
+                            max_level: 3,
+                            description: '使你的盾牌格挡技能可以额外格挡一次攻击，并使其有效时间延长{$0}秒。',
+                            valueList:[
+                                [0.5],
+                                [1],
+                                [2]
+                            ],
+                            require_item: 10,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improvedrevenge.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improvedrevenge-off.jpg"),
+                            item_name: '强化复仇',
+                            max_level: 3,
+                            description: '使你的复仇技能有{$0}%的几率令目标昏迷{$1}秒。',
+                            valueList:[
+                                [15,3],
+                                [30,3],
+                                [45,3]
+                            ],
+                            require_item: 10,
+                        },
+                        item3:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/defiance.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/defiance-off.jpg"),
+                            item_name: '挑衅',
+                            max_level: 5,
+                            description: '是你在防御姿态下由于攻击而造成的威胁值提高{$0}%。',
+                            valueList:[
+                                [3],
+                                [6],
+                                [9],
+                                [12],
+                                [15]
+                            ],
+                            require_item: 10,
+                        }
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improvedsunderarmor.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improvedsunderarmor-off.jpg"),
+                            item_name: '强化破甲攻击',
+                            max_level: 3,
+                            description: '减少破甲技能所消耗的怒气{$0}点。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3]
+                            ],
+                            require_item: 15,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improveddisarm.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improveddisarm-off.jpg"),
+                            item_name: '强化缴械',
+                            max_level: 3,
+                            description: '使你的缴械技能的效果持续时间延长{$0}秒。',
+                            valueList:[
+                                [1],
+                                [2],
+                                [3]
+                            ],
+                            require_item: 15,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improvedtaunt.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improvedtaunt-off.jpg"),
+                            item_name: '强化嘲讽',
+                            max_level: 2,
+                            description: '使你的嘲讽技能的冷却时间减少{$0}秒。',
+                            valueList:[
+                                [1],
+                                [2]
+                            ],
+                            require_item: 15,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improvedshieldwall.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improvedshieldwall-off.jpg"),
+                            item_name: '强化盾墙',
+                            max_level: 2,
+                            description: '使你的盾墙技能的有效时间延长{$0}秒。',
+                            valueList:[
+                                [3],
+                                [5]
+                            ],
+                            require_item: 20,
+                        },
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/concussionblow.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/concussionblow-off.jpg"),
+                            item_name: '震荡猛击',
+                            max_level: 1,
+                            description: '技能，{$0}，{$1}秒冷却。</br>野蛮的攻击，令目标昏迷{$2}秒。',
+                            valueList:[
+                                ["瞬发",45,5]
+                            ],
+                            require_item: 20,
+                        },
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/improvedshieldbash.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/improvedshieldbash-off.jpg"),
+                            item_name: '强化盾击',
+                            max_level: 2,
+                            description: '使你的盾击技能有{$0}%的几率使目标沉默{$1}秒。',
+                            valueList:[
+                                [50,3],
+                                [100,3]
+                            ],
+                            require_item: 20,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:null,
+                        item1:null,
+                        item2:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/one-handedweaponspecialization.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/one-handedweaponspecialization-off.jpg"),
+                            item_name: '单手武器专精',
+                            max_level: 5,
+                            description: '使你的单手近战武器所能造成的伤害提高{$0}%。',
+                            valueList:[
+                                [2],
+                                [4],
+                                [6],
+                                [8],
+                                [10]
+                            ],
+                            require_item: 25,
+                        },
+                        item3:null
+                    },
+                    {
+                        item0:null,
+                        item1:{
+                            item_icon: require("../source/img/talents/warrior/warrior_2/shieldslam.jpg"),
+                            item_icon_off: require("../source/img/talents/warrior/warrior_2/shieldslam-off.jpg"),
+                            item_name: '盾牌猛击',
+                            max_level: 1,
+                            description: '技能，{$0}，{$1}秒冷却。<br>用盾牌击打目标，对其造成{$2}到{$3}点伤害，并有{$4}%的几率驱散目标身上的{$5}个魔法效果，同时产生一定量的威胁值。',
+                            valueList:[
+                                ["瞬发",6,288,352,50,1]
+                            ],
+                            require_item: 30,
+                        },
+                        item2:null,
                         item3:null
                     }
                 ]

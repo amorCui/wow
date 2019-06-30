@@ -23,6 +23,11 @@ class TalentTree extends Component {
         }
     }
 
+    handleClick = ()=>{
+        console.log(2);
+       
+    }
+
     render() {
         return (
             <div className="talentTree">
@@ -44,9 +49,9 @@ class TalentTree extends Component {
                     </div>
                 </div>
                 <div className="talentTree_container">
-                    <TalentContainer treeList={this.state.trees.tree_0} currentLevel={this.state.level_0}></TalentContainer>
-                    <TalentContainer treeList={this.state.trees.tree_1} currentLevel={this.state.level_1}></TalentContainer>
-                    <TalentContainer treeList={this.state.trees.tree_2} currentLevel={this.state.level_2}></TalentContainer>
+                    <TalentContainer treeList={this.state.trees.tree_0} currentLevel={this.state.level_0} handleClick={this.handleClick}></TalentContainer>
+                    <TalentContainer treeList={this.state.trees.tree_1} currentLevel={this.state.level_1} handleClick={this.handleClick}></TalentContainer>
+                    <TalentContainer treeList={this.state.trees.tree_2} currentLevel={this.state.level_2} handleClick={this.handleClick}></TalentContainer>
                 </div>
 
             </div>

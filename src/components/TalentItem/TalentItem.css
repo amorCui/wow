@@ -1,6 +1,6 @@
 .talentTree_container_line{
     display: flex;
-    padding-top: .5rem;
+    padding-top: .7rem;
 }
 
 .talentTree_container_line_item{
@@ -59,7 +59,8 @@
 .talentItem_tooltips{
     border-radius: 6px;
     border: solid 2px #6e6e6e33;
-    width: 10rem;
+    width: auto;
+    max-width: 15rem;
     background-color: #04091d50 !important;
     padding: .5rem 1rem;
 }
