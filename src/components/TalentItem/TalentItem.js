@@ -9,60 +9,77 @@ import "./TalentItem.css";
 class TalentItem extends Component {
     constructor(props){
         super(props);
-        if(this.props.item){
-            let replaceList = this.props.item.valueList[this.props.currentLevel];
-            this.current_desc = this.replace(this.props.item.description,replaceList);
-           
-            this.next_desc = null;
-            if(this.props.currentItemLevel > 0 && this.props.currentItemLevel < this.props.item.max_level){
-                this.next_desc = "";
-            }
-        }
     }
 
     replace = (str,values)=>{
-        values.forEach ((v,i) => {
-            str = str.replace("{$" + i + "}",v);
-        });
+        
+        if(values && values.length > 0){
+            values.forEach ((v,i) => {
+                str = str.replace("{$" + i + "}",v);
+            });
+        }else{
+
+            console.log("str:",str)
+        }
+       
         return str; 
+       
     }
 
-    handleClick = ()=>{
-        console.log('click');
-        if(this.props.currentItemLevel < this.props.item.max_level && true){
-            this.props.handleClick();
+    handleClick = (e)=>{
+        if(this.props.currentItemLevel < this.props.item.max_level && this.props.currentLevel >= this.props.item.require_item ){
+            this.props.handleClick(e);
         }
     }
 
 
     render() {
         let tooltips ;
-        
+        let current_desc = null;
+        let next_desc = null;
 
+        let currentItemLevel = parseInt(this.props.currentItemLevel);
+        let max_level;
+        let currentLevel;
+        let require_item;
         let talentItem;
         if(this.props.item){
+            
+            max_level = parseInt(this.props.item.max_level);
+            currentLevel = parseInt(this.props.currentLevel);
+            require_item = parseInt(this.props.item.require_item);
+
+            let replaceList = this.props.item.valueList[this.props.currentItemLevel > 0 ?this.props.currentItemLevel - 1 : this.props.currentItemLevel];
+            current_desc = this.replace(this.props.item.description,replaceList);
+            
+            if(this.props.currentItemLevel > 0 && this.props.currentItemLevel < this.props.item.max_level){
+                let replaceList = this.props.item.valueList[this.props.currentItemLevel];
+                next_desc = this.replace(this.props.item.description,replaceList);
+            }
+           
+      
             tooltips =  
             `<div>` +
                 `<div class="talentItem_tips_name">${this.props.item.item_name}</div>`;
-            tooltips += `<div class="talentItem_tips_level">等级:${this.props.currentLevel}/${this.props.item.max_level}</div>`;
-            if(this.props.item.require_item > 0){
-                tooltips +=  `<div class="talentItem_tips_required">需要 ${this.props.item.require_item} 点在 ${this.props.treeName} 天赋</div>`;
+            tooltips += `<div class="talentItem_tips_level">等级:${currentItemLevel}/${max_level}</div>`;
+            if(require_item > 0){
+                tooltips +=  `<div class="talentItem_tips_required">需要 ${require_item} 点在 ${this.props.treeName} 天赋</div>`;
             }
-            tooltips += `<div class="talentItem_tips_current_desc">${this.current_desc}</div>`;
-            if(this.props.currentLevel === this.props.item.max_level){
+            tooltips += `<div class="talentItem_tips_current_desc">${current_desc}</div>`;
+            if(currentItemLevel === max_level){
                 tooltips +=  `<div class="talentItem_tips_next_desc talentItem_tips_cancel">
                                 右键单击取消
                             </div>`;
             }
-            if(this.props.currentLevel === 0){
+            if(currentItemLevel === 0){
                 tooltips += `<div class="talentItem_tips_next_desc talentItem_tips_learn">
                                 点击学习
                             </div>`;
             }
-            if(this.props.currentLevel > 0 && this.props.currentLevel < this.props.item.max_level){
+            if(currentItemLevel > 0 && currentItemLevel < max_level){
                 tooltips += `<div class="talentItem_tips_next_desc">
                                 <div>下一等级</div>
-                                <div>${this.next_desc}</div>
+                                <div>${next_desc}</div>
                             </div>`;
             }
             tooltips +=
@@ -70,36 +87,45 @@ class TalentItem extends Component {
 
             let talentItem_border;
             let talentItem_level;
-            if(this.props.currentItemLevel > 0 && this.props.currentItemLevel < this.props.item.max_level){
+            let talentItem_img;
+
+            if(currentItemLevel > 0 && currentItemLevel <= max_level){
                 talentItem_border = <div className="talentItem_border talentItem_border_green"></div>
             }
-            if(this.props.currentLevel >= this.props.item.require_item && this.props.currentItemLevel < this.props.item.max_level){
+            if(currentLevel >= require_item && currentItemLevel <= max_level){
                 talentItem_level = 
                 <div className="talentItem_level talentItem_level_green">
-                    {this.props.currentItemLevel}/{this.props.item.max_level}
+                    {currentItemLevel}/{max_level}
                 </div>
             }
-            if(this.props.currentItemLevel === this.props.item.max_level){
+            if(currentItemLevel === max_level){
                 talentItem_border = <div className="talentItem_border talentItem_border_full"></div>
                 talentItem_level = 
                 <div className="talentItem_level talentItem_level_full">
-                    {this.props.currentItemLevel}/{this.props.item.max_level}
+                    {currentItemLevel}/{max_level}
                 </div>
             }
-            if(this.props.currentItemLevel === 0){
+            if(currentItemLevel === 0){
                 talentItem_border = <div className="talentItem_border"></div>
             }
             
-            if(this.props.currentLevel < this.props.item.require_item ){
+            if(currentLevel < require_item ){
                 talentItem_level = 
                 <div className="talentItem_level">
-                    {this.props.currentItemLevel}/{this.props.item.max_level}
+                    {currentItemLevel}/{max_level}
                 </div>
+            }
+            if(currentItemLevel === "0"){
+                talentItem_img = 
+                <img src={this.props.item.item_icon_off} alt=""/>
+            }else{
+                talentItem_img = 
+                <img src={this.props.item.item_icon} alt=""/>
             }
            
 
             talentItem =  
-            <div onClick={this.handleClick}>
+            <div onClick={this.handleClick} data-tree_index={this.props.treeIndex} data-item_num={this.props.itemNum}>
                 <div className="talentItem_body" data-tip={tooltips} data-place={"bottom"} data-html={true} data-class={'talentItem_tooltips'}>
                     <img src={this.props.item.item_icon_off} alt=""/>
                     {talentItem_border}
