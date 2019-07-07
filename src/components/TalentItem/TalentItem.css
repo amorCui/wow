@@ -23,15 +23,15 @@
     top: .05rem;
     position: absolute;
     border-radius: .5rem;
-    border: .05rem #686868 solid;
+    border: .1rem #686868 solid;
 }
 
 .talentItem_border_green{
-    border: .05rem #1ae91b solid;
+    border: .1rem #1ae91b solid;
 }
 
 .talentItem_border_full{
-    border: .05rem #ffd100 solid;
+    border: .1rem #ffd100 solid;
 }
 
 .talentItem_level{
