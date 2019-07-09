@@ -115,7 +115,7 @@ class TalentItem extends Component {
                     {currentItemLevel}/{max_level}
                 </div>
             }
-            if(currentItemLevel === "0"){
+            if(currentItemLevel === 0){
                 talentItem_img = 
                 <img src={this.props.item.item_icon_off} alt=""/>
             }else{
@@ -127,7 +127,7 @@ class TalentItem extends Component {
             talentItem =  
             <div onClick={this.handleClick} data-tree_index={this.props.treeIndex} data-item_num={this.props.itemNum}>
                 <div className="talentItem_body" data-tip={tooltips} data-place={"bottom"} data-html={true} data-class={'talentItem_tooltips'}>
-                    <img src={this.props.item.item_icon_off} alt=""/>
+                    {talentItem_img}
                     {talentItem_border}
                     {talentItem_level}
                 </div>
